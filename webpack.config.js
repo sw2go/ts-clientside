@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "wwwroot"),
     filename: "[name].[chunkhash].js",
-    publicPath: "/",
+    publicPath: "./",
   },
   resolve: {
     extensions: [".js", ".ts"],
