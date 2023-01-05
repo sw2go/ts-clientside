@@ -10,13 +10,11 @@ npm i
 npm run build
 ```
 
-Open VS Code (having Live Server Extension installed and configured to Port 4200):
-File > Open Folder "ts-clientside"
-
-Start Live Server. The application is shown here: 
-- http://localhost:4200
-- Enjoy IntelliSense in VS Code 
-- Any change in ./src will immediately take effect in the running application
+VS Code
+- Make sure 'Live Server Extension' is installed and configured to Port 4200
+- File > Open Folder...  "ts-clientside"
+- Hit 'Go Live' in status bar to run Live Server 
+- The application is shown here: http://localhost:4200
+- Enjoy IntelliSense
+- Any change in ./src is immediately displayed in the browser
 - To Debug hit F5
-
-
