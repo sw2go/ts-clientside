@@ -11,7 +11,7 @@ npm run build
 ```
 
 VS Code
-- Make sure 'Live Server Extension' is installed and configured to Port 4200
+- Make sure 'Live Server Extension' is installed and configured to Port 4200 and "/wwwroot"
 - File > Open Folder...  "ts-clientside"
 - Hit 'Go Live' in status bar to run Live Server 
 - The application is shown here: http://localhost:4200
