@@ -19,9 +19,9 @@ VS Code
 - Any change in ./src is immediately displayed in the browser
 - To Debug hit F5
 
-
 Hints: 
-- Read comments in webpack.config.js
-- how to copy assets
-- how to inject typescript not only to main page
-- to build a file it must be referenced in a *.ts file (i.e. *.css)
+- Read comments in webpack.config.js to understand how to
+  - copy assets with loader type 'asset/resource' and the CopyPlugin
+  - inject typescript-chunks to different html files
+- To build a file it must be referenced in a *.ts file (i.e. *.css)
+- When moving the output-folder wwwroot adjust webpack.config.js and .vscode/settings.json

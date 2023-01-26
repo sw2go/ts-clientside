@@ -29,7 +29,7 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-      { // this loader only required when using CopyPlugin
+      { // this loader is required when using CopyPlugin
         test: /\.(png|jpg|gif)$/,   
         type: 'asset/resource'
       }    
@@ -37,20 +37,19 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({
-      chunks: [ "main" ],           // entries to inject, when omitted => 'all'  
+    new HtmlWebpackPlugin({             // default => inject 'all' chunks
       template: "./src/index.html",
       filename: "index.html"
     }),
-    // new HtmlWebpackPlugin({
-    //   chunks: [ "chunkxy"],  
-    //   template: "./src/about.html",
+    // new HtmlWebpackPlugin({          // add more plugin instances 
+    //   chunks: [ "chunkxy"],          // to inject specific chunk's    
+    //   template: "./src/about.html",  // to specific file
     //   filename: "about.html"
     // }),
     new MiniCssExtractPlugin({
       filename: "css/[name].[chunkhash].css",
     }),
-    new CopyPlugin({                // to copy existing resources to dist
+    new CopyPlugin({ // to copy existing resources to output, requires loader type: 'asset/resource'
       patterns: [
         { from: "src/assets/*.*" , to: "assets/[name][ext]" },
       ],
