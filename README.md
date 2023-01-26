@@ -18,3 +18,10 @@ VS Code
 - Enjoy IntelliSense
 - Any change in ./src is immediately displayed in the browser
 - To Debug hit F5
+
+
+Hints: 
+- Read comments in webpack.config.js
+- how to copy assets
+- how to inject typescript not only to main page
+- to build a file it must be referenced in a *.ts file (i.e. *.css)

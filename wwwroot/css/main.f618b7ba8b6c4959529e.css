@@ -7,11 +7,14 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html * {
   margin: 0;
   padding: 0;
+  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
+
 
 .input-zone {
   align-items: center;
@@ -34,4 +37,4 @@ body {
   padding: 5px;
 }
 
-/*# sourceMappingURL=main.6e952da7dbc24003c8e4.css.map*/
+/*# sourceMappingURL=main.f618b7ba8b6c4959529e.css.map*/
